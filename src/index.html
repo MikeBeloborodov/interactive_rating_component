@@ -16,12 +16,16 @@
     <main>
       <h1 class="visually-hidden">Interactive rating component</h1>
       <div class="interactive-rating-component">
-        <img
-          class="interactive-rating-component__icon"
-          src="images/icon-star.svg"
-          alt="Icon of a star."
-        />
-        <h2 class="interactive-rating-component__heading">How did we do?</h2>
+        <div class="interactive-rating-component__icon-wrapper">
+          <img
+            class="interactive-rating-component__icon"
+            src="images/icon-star.svg"
+            alt="Icon of a star."
+          />
+        </div>
+        <h2 class="interactive-rating-component__heading heading">
+          How did we do?
+        </h2>
         <p class="interactive-rating-component__text">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
@@ -56,9 +60,27 @@
         <button class="interactive-rating-component__button-submit">
           Submit
         </button>
-        You selected out of 5 Thank you! We appreciate you taking the time to
-        give a rating. If you ever need more support, don’t hesitate to get in
-        touch!
+        <div class="interactive-rating-component__rating-confirmed-modal">
+          <img
+            class="interactive-rating-component__rating-confirmed-icon"
+            src="images/illustration-thank-you.svg"
+            alt="Icon of a mobile phone with a paper coming out of the screen"
+          />
+          <p
+            class="interactive-rating-component__rating-confirmed-selected-number"
+          >
+            You selected <span class="selected-number"></span> out of 5
+          </p>
+          <h2
+            class="interactive-rating-component__rating-confirmed-heading heading"
+          >
+            Thank you!
+          </h2>
+          <p class="interactive-rating-component__rating-confirmed-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
     </main>
   </body>

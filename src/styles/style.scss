@@ -1,3 +1,109 @@
-body {
-  background-color: #fff;
+@import 'variables';
+@import 'fonts';
+
+// utility styles
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
+
+// styles
+.body {
+  background-color: $body-background-clr;
+  font-family: Overpass, sans-serif;
+  display: flex;
+  block-size: 100%;
+  justify-content: center;
+  align-items: center;
+  color: $main-text-clr;
+}
+
+.interactive-rating-component {
+  background-color: $component-background-clr;
+  margin: 0 24px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px 23px 32px 24px;
+}
+
+.interactive-rating-component__icon-wrapper {
+  background-color: $button-background-clr;
+  block-size: 40px;
+  inline-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.interactive-rating-component__icon {
+  block-size: auto;
+  inline-size: 13px;
+}
+
+.interactive-rating-component__heading {
+  margin: 20px 0 0;
+}
+
+.heading {
+  color: $heading-clr;
+  letter-spacing: -0.18px;
+}
+
+.interactive-rating-component__text {
+  margin: 11px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.interactive-rating-component__buttons-list {
+  display: flex;
+  margin: 28px 0 0;
+  justify-content: space-between;
+}
+
+.interactive-rating-component__button-container {
+  cursor: pointer;
+}
+
+.interactive-rating-component__button-rating {
+  border: none;
+  background-color: $button-background-clr;
+  inline-size: 41px;
+  block-size: 41px;
+  border-radius: 50%;
+}
+
+.interactive-rating-component__button-submit {
+  margin: 24px 0 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 15px 0 11px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  background-color: $submit-button-background-clr;
+  color: $submit-button-text-clr;
+}
+
+.interactive-rating-component__rating-confirmed-modal {
+  display: none;
+}
+
+.interactive-rating-component__rating-confirmed-modal_active {
+  display: initial;
+}
+
+// .selected-number {}
+
+// .interactive-rating-component__rating-confirmed-heading {}
+
+// .interactive-rating-component__rating-confirmed-text {}
